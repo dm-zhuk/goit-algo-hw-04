@@ -11,26 +11,26 @@ Tested Insertion Sort, Merge Sort, and Timsort on random, sorted, and reverse-so
 - **100**: Insertion Sort (0.000244s), Merge Sort (0.000260s), Timsort (0.000018s)
 - **1000**: Insertion Sort (0.037081s), Merge Sort (0.002510s), Timsort (0.000121s)
 - **10000**: Insertion Sort (5.059977s), Merge Sort (0.038280s), Timsort (0.001461s)
-- **Insight**: Insertion Sort’s O(n²) scales poorly; Merge Sort and Timsort’s O(n log n) excel, with Timsort fastest.
+- **Insight**: Insertion O(n²) scales poorly; Merge and Timsort O(n log n) are faster, with Timsort fastest.
 
 ### Sorted Data
 
 - **100**: Insertion Sort (0.000015s), Merge Sort (0.000157s), Timsort (0.000004s)
 - **1000**: Insertion Sort (0.000175s), Merge Sort (0.001841s), Timsort (0.000015s)
 - **10000**: Insertion Sort (0.002018s), Merge Sort (0.025698s), Timsort (0.000206s)
-- **Insight**: Insertion Sort’s O(n) shines; Merge Sort and Timsort (O(n log n)) are slower but efficient, Timsort best.
+- **Insight**: Insertion O(n) shows good speed; Merge Sort and Timsort (O(n log n)) are slower but efficient, Timsort best.
 
 ### Reverse-Sorted Data
 
 - **100**: Insertion Sort (0.000493s), Merge Sort (0.000172s), Timsort (0.000007s)
 - **1000**: Insertion Sort (0.073927s), Merge Sort (0.002022s), Timsort (0.000020s)
 - **10000**: Insertion Sort (9.552948s), Merge Sort (0.025374s), Timsort (0.000176s)
-- **Insight**: Insertion Sort’s O(n²) worst-case struggles; Merge Sort and Timsort (O(n log n)) handle it well, Timsort superior.
+- **Insight**: Insertion O(n²) worst-case struggles; Merge Sort and Timsort (O(n log n)) handle it well, Timsort No.1.
 
 ### Conclusion
 
-- Insertion Sort: Best for small/sorted data, impractical for large/random (O(n²)).
-- Merge Sort: Consistent O(n log n) across all cases.
+- Insertion Sort: best for small/nearly sorted data, impractical for large/random (O(n²)).
+- Merge Sort: consistent O(n log n) results across all cases.
 - Timsort: Python’s hybrid (O(n log n)) outperforms both, optimized for real-world data.
 
 ### Test backup
